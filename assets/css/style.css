@@ -2503,134 +2503,269 @@ textarea.form-control {
    AFFILIATION PAGE
 =========================== */
 .affiliation-section {
-    padding: 80px 0;
-    background-color: #fcfcfc;
+  padding: 80px 0;
+  background-color: #fcfcfc;
 }
 
 .aff-intro {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
 }
 
 .aff-intro p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
 }
 
 /* Grid Layout (3 Kolom Desktop) */
 .affiliation-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 /* Style Kartu Afiliasi */
 .aff-card-full {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
 }
 
 /* Garis Merah di Atas (Branding) */
 .aff-card-full::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: #8B1010;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #8b1010;
 }
 
 .aff-card-full:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Logo Area */
 .aff-logo-area {
-    background: #f9f9f9;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #f0f0f0;
+  background: #f9f9f9;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .aff-logo-area i {
-    font-size: 50px;
-    color: #ccc; /* Placeholder warna abu */
-    transition: 0.3s;
+  font-size: 50px;
+  color: #ccc; /* Placeholder warna abu */
+  transition: 0.3s;
 }
 
 .aff-card-full:hover .aff-logo-area i {
-    color: #F8D518; /* Berubah jadi emas saat hover */
+  color: #f8d518; /* Berubah jadi emas saat hover */
 }
 
 /* Content Area */
 .aff-content {
-    padding: 30px;
-    flex: 1;
+  padding: 30px;
+  flex: 1;
 }
 
 .aff-title {
-    font-size: 18px;
-    color: #8B1010;
-    margin: 0 0 10px;
-    font-weight: 700;
+  font-size: 18px;
+  color: #8b1010;
+  margin: 0 0 10px;
+  font-weight: 700;
 }
 
 .aff-badge {
-    display: inline-block;
-    background: #FFF4E5; /* Oranye muda */
-    color: #d46900;
-    font-size: 11px;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 20px;
-    margin-bottom: 8px;
+  display: inline-block;
+  background: #fff4e5; /* Oranye muda */
+  color: #d46900;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
 }
 
 .aff-badge.gray {
-    background: #f0f0f0;
-    color: #666;
+  background: #f0f0f0;
+  color: #666;
 }
 
 .aff-id {
-    font-size: 13px;
-    color: #999;
-    margin: 0;
+  font-size: 13px;
+  color: #999;
+  margin: 0;
 }
 
 .aff-divider {
-    height: 1px;
-    background: #eee;
-    width: 60px;
-    margin: 20px auto;
+  height: 1px;
+  background: #eee;
+  width: 60px;
+  margin: 20px auto;
 }
 
 .aff-text {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================
+   GALLERY DETAILS PAGE
+=========================== */
+.gallery-details-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* Album Header Info */
+.album-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.album-meta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  color: #888;
+  font-size: 14px;
+}
+
+.album-meta i {
+  color: #7c1f1f;
+  margin-right: 6px;
+}
+
+.album-title {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.album-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Grid Foto (Desktop 4 Kolom) */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* Item Foto */
+.album-item {
+  position: relative;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.album-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.album-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay saat Hover */
+.album-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(124, 31, 31, 0.7); /* Merah transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.album-item:hover .album-overlay {
+  opacity: 1;
+}
+
+.album-overlay i {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Tombol Kembali */
+.album-navigation {
+  text-align: center;
+}
+
+.btn-back-gallery {
+  display: inline-block;
+  border: 1px solid #7c1f1f;
+  color: #7c1f1f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-back-gallery:hover {
+  background-color: #7c1f1f;
+  color: #fff;
+}
+
+/* ==========================
+   GOOGLE MAPS STYLE
+=========================== */
+.map-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden; /* Agar sudut peta ikut membulat */
+    border: 1px solid #eee;
+}
+
+.map-container iframe {
+    display: block; /* Menghilangkan gap bawah pada iframe */
+    width: 100%;
+    height: 250px; /* Tinggi peta yang pas di sidebar */
 }
 
 /* Responsiveness */
 @media (max-width: 991px) {
-.affiliation-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di Tablet */
-    }
-	
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .affiliation-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 Kolom di Tablet */
+  }
+
   .news-layout {
     grid-template-columns: 1fr; /* Stack jadi 1 kolom */
   }
@@ -2702,16 +2837,35 @@ textarea.form-control {
   }
 }
 @media (max-width: 768px) {
-	
-.affiliation-grid {
-        display: grid;
-        grid-template-columns: 1fr; /* 1 Kolom di HP (Sesuai request terakhir) */
-        gap: 20px;
-    }
-    
-    .aff-card-full {
-        width: 100%;
-    }
+  .album-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Paksa 2 kolom */
+    gap: 10px !important;
+  }
+
+  .album-item {
+    height: 150px !important; /* Sesuaikan tinggi di HP */
+  }
+
+  .album-title {
+    font-size: 20px;
+  }
+
+  .album-meta {
+    flex-direction: column; /* Meta info jadi stack vertikal di HP */
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .affiliation-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 Kolom di HP (Sesuai request terakhir) */
+    gap: 20px;
+  }
+
+  .aff-card-full {
+    width: 100%;
+  }
 
   .article-footer-row {
     flex-direction: column;
@@ -2919,6 +3073,18 @@ textarea.form-control {
   }
 }
 @media (max-width: 576px) {
+.map-container iframe {
+        height: 200px;
+    }
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* Tetap 2 kolom */
+    gap: 10px !important;
+  }
+
+  .album-item {
+    height: 120px !important; /* Lebih kecil lagi untuk HP kecil */
+  }
+
   .news-card-grid {
     grid-template-columns: 1fr; /* HP jadi 1 kolom */
   }
